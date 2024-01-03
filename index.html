@@ -6,7 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
     <title>Your Tailwind Project</title>
+
 </head>
 
 <body>
@@ -42,45 +46,94 @@
                 und gepr. Restaurator i. H.
             </div>
         </div>
-        <div class="flex-col overflow-hidden relative flex min-h-[4095px] w-full pb-0 pt-16  max-md:max-w-full">
+        <div class="flex-col overflow-hidden relative flex w-full pb-0 pt-16  max-md:max-w-full">
             <img loading="lazy" src="rectangle-3828.png"
                 class="absolute z-[0] h-full w-full object-cover object-center inset-0" />
             <div style="background: linear-gradient(95deg, rgba(190, 196, 184, 0.00) 8.33%, #BEC4B8 57.27%);"
-                class="absolute top-36 left-[-58%] w-[125%] h-[48rem] transform rotate-[-60deg] flex-shrink-0 opacity-50 ">
+                class="absolute xl:top-36 2xl:left-[-58%] 2xl:w-[150rem] 2xl:h-[40rem] xl:left-[-60%] xl:w-[130rem] xl:h-[30rem] transform rotate-[-60deg] flex-shrink-0 opacity-50 ">
             </div>
             <div class="absolute top-[-4%] right-[-44%] w-[92%] h-[10%] transform rotate-[-60deg] flex-shrink-0 rounded-full opacity-50 bg-gradient-to-r from-transparent via-[#BEC4B8] to-[#BEC4B8]"
                 style="background: linear-gradient(95deg, rgba(190, 196, 184, 0.00) 8.33%, #BEC4B8 57.27%);"></div>
             <div class="relative self-center flex w-full  flex-col items-stretch max-md:max-w-full">
                 <div class="self-center w-full pl-32">
                     <div class="gap-5 flex flex-col md:flex-row md:items-stretch md:gap-0">
-                        <div class="flex flex-col items-stretch w-full md:w-[32%]">
-                            <div
-                                class="flex flex-col items-stretch mx-auto pl-11 pr-12 py-11 border-[22px] border-solid border-stone-500 mt-10 md:mt-0 md:px-5">
-                                <div
-                                    class="flex-row overflow-hidden relative flex aspect-w-1 aspect-h-1 w-full items-stretch justify-between gap-3.5 mb-2">
-                                    <div
-                                        class="relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
-                                        <img loading="lazy" src="2.jfif"
-                                            class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
-                                    </div>
-                                    <div
-                                        class="relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
-                                        <img loading="lazy" src="2.jfif"
-                                            class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                        <div
+                            class="grid grid-cols-2 overflow-hidden h-screen gap-4 mx-auto pl-11 pr-12 py-11 border-[22px] border-solid border-stone-500 mt-10 md:mt-0 md:px-5">
+                            <div class="flex flex-col items-stretch  ">
+                                <div id="splide" class="splide">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="3.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="3.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <!-- Add more slides as needed -->
+                                        </ul>
                                     </div>
                                 </div>
-
-                                <div
-                                    class="flex-row overflow-hidden relative flex aspect-w-1 aspect-h-1 w-full items-stretch justify-between gap-3.5">
-                                    <div
-                                        class="relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
-                                        <img loading="lazy" src="3.jfif"
-                                            class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
-                                    </div>
-                                    <div
-                                        class="relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
-                                        <img loading="lazy" src="3.jfif"
-                                            class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                            </div>
+                            <div class="flex flex-col items-stretch  ">
+                                <div id="splide2" class="splide splide-container">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="3.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="3.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <li
+                                                class="splide__slide  image-slider slide-up relative flex-shrink-0 h-[232px] flex-col flex-1 border-[9px] border-solid border-stone-500">
+                                                <img loading="lazy" src="2.jfif"
+                                                    class="aspect-w-1 aspect-h-1 object-cover w-full h-full overflow-hidden" />
+                                            </li>
+                                            <!-- Add more slides as needed -->
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -110,207 +163,318 @@
 
 
 
+                <div
+                    class="text-stone-700 text-center text-5xl font-bold  self-center ml-0 whitespace-nowrap max-md:text-4xl mt-[6rem] ">
+                    Was wir machen
+                </div>
+
+                <div class="flex-col items-stretch h-full  m-16 mt-[-1rem] mb-0">
+
+                    <div class=" cover-image ">
 
 
-                <div style="background-image: url(Frame.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                margin: 2rem 10rem;"
-                    class="flex-col items-stretch  relative flex min-h-[1400px]  pl-16 pr-20 pt-24 pb-32 max-md:max-w-full max-md:px-5 max-md:py-24">
-                    <div class="text-stone-700 text-center text-5xl font-bold leading-[62.4px] self-center ml-0 whitespace-nowrap mt-8 max-md:text-4xl"
-                        style="position: absolute; top: -4rem">
-                        Was wir machen
-                    </div>
-                    <div class="relative mr-4 max-md:max-w-full max-md:mr-2.5">
-                        <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                            <div class="flex flex-col items-stretch w-1/5 max-md:w-full max-md:ml-0">
-                                <div
-                                    class="relative flex flex-col items-stretch w-full mx-auto pl-3 pr-2 py-3 rounded-3xl border-[3px] border-solid border-stone-300 max-md:mt-10">
-                                    <img loading="lazy" src="Rectangle 46.png"
-                                        class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
-                                    <div
-                                        class="text-stone-700 text-center text-lg leading-6 tracking-wider capitalize mt-2">
-                                        Hochwertige Malerarbeiten
+                        <div class="p-20 relative w-full">
+                            <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+                                <div class="flex flex-col items-stretch w-1/5 max-md:w-fit max-md:ml-0">
+                                    <div onmouseover="changeBottomImage(1)"
+                                        class="relative flex flex-col items-stretch w-fit mx-auto pl-3 pr-2 py-3 rounded-3xl hover:border-[3px] border-solid border-stone-300 max-md:mt-10">
+                                        <img loading="lazy" src="Rectangle 46.png"
+                                            class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
+                                        <div
+                                            class="text-stone-700 text-center leading-6 tracking-wider capitalize mt-2">
+                                            Hochwertige Malerarbeiten
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col items-stretch w-1/5 max-md:w-full max-md:ml-0">
-                                <div class="relative flex grow flex-col items-stretch mt-12 max-md:mt-10">
-                                    <img loading="lazy" src="2.png"
-                                        class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
-                                    <div
-                                        class="text-stone-700 text-center text-lg leading-6 tracking-wider capitalize mt-2">
-                                        Kompetente Gestaltung & Beratung
+                                <div class="flex flex-col items-stretch w-1/5 max-md:w-full max-md:ml-0">
+                                    <div onmouseover="changeBottomImage(2)"
+                                        class="relative flex grow flex-col items-stretch mt-12 max-md:mt-10 pl-3 pr-2 py-3 rounded-3xl  hover:border-[3px] border-solid border-stone-300">
+                                        <img loading="lazy" src="2.png"
+                                            class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
+                                        <div
+                                            class="text-stone-700 text-center  leading-6 tracking-wider capitalize mt-2">
+                                            Kompetente Gestaltung & Beratung
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="flex flex-col items-stretch w-1/5  max-md:w-full max-md:ml-0">
-                                <div class="relative flex flex-col items-stretch max-md:mt-8">
-                                    <img loading="lazy" src="Rectangle 70.png"
-                                        class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
-                                    <div
-                                        class="text-stone-700 text-center text-lg leading-6 tracking-wider capitalize mt-2">
-                                        Qualitative Bodenbelagsarbeiten
+                                <div class="flex flex-col items-stretch w-1/5  max-md:w-full max-md:ml-0">
+                                    <div onmouseover="changeBottomImage(3)"
+                                        class="relative flex flex-col items-stretch max-md:mt-8  pl-3 pr-2 py-3 rounded-3xl  hover:border-[3px] border-solid border-stone-300">
+                                        <img loading="lazy" src="Rectangle 70.png"
+                                            class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
+                                        <div
+                                            class="text-stone-600 text-center leading-6 tracking-wider capitalize mt-2">
+                                            Qualitative Bodenbelagsarbeiten
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="flex flex-col items-stretch w-1/5  max-md:w-full max-md:ml-0">
-                                <div class="relative flex flex-col items-stretch mt-12 max-md:mt-10">
-                                    <img loading="lazy" src="Rectangle 22.png"
-                                        class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
-                                    <div
-                                        class="text-stone-700 text-center text-lg leading-6 tracking-wider capitalize mt-2">
-                                        Liebevolle Restaurierungen
+                                <div class="flex flex-col items-stretch w-1/5  max-md:w-full max-md:ml-0">
+                                    <div onmouseover="changeBottomImage(4)"
+                                        class="relative flex flex-col items-stretch mt-12 max-md:mt-10 pl-3 pr-2 py-3 rounded-3xl  hover:border-[3px] border-solid border-stone-300">
+                                        <img loading="lazy" src="Rectangle 22.png"
+                                            class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
+                                        <div
+                                            class="text-stone-700 text-center  leading-6 tracking-wider capitalize mt-2">
+                                            Liebevolle Restaurierungen
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="flex flex-col items-stretch w-1/5  max-md:w-full max-md:ml-0">
-                                <div class="relative flex flex-col items-stretch max-md:mt-8">
-                                    <img loading="lazy" src="pexels-trygve-finkelsen-3029037.png"
-                                        class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
-                                    <div
-                                        class="text-stone-700 text-center text-lg leading-6 tracking-wider capitalize mt-2">
-                                        Energieberatung
+                                <div class="flex flex-col items-stretch w-1/5  max-md:w-full max-md:ml-0">
+                                    <div onmouseover="changeBottomImage(5)"
+                                        class="relative flex flex-col items-stretch max-md:mt-8 pl-3 pr-2 py-3 rounded-3xl  hover:border-[3px] border-solid border-stone-300">
+                                        <img loading="lazy" src="pexels-trygve-finkelsen-3029037.png"
+                                            class="aspect-[0.58] object-contain object-center w-48 overflow-hidden rounded-lg" />
+                                        <div
+                                            class="text-stone-700 text-center  leading-6 tracking-wider capitalize mt-2">
+                                            Energieberatung
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="relative mr-4 mt-16 -mb-6 max-md:max-w-full max-md:mr-2.5 max-md:mt-10 max-md:mb-2.5">
-                        <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                            <div class="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-                                <img src="Rectangle 46 full.png"
-                                    class="aspect-[1.5] object-contain object-center w-full overflow-hidden max-md:max-w-full max-md:mt-10 rounded-lg" />
-                            </div>
-                            <div class="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
-                                <div class="relative flex grow flex-col mt-11 max-md:max-w-full max-md:mt-10">
-                                    <div
-                                        class="text-stone-700 text-3xl font-bold leading-10 tracking-widest capitalize whitespace-nowrap ml-4 max-md:max-w-full">
-                                        Hochwertige Malerarbeiten
+                        <div class="slider-show-images active">
+                            <div class="p-20 grid grid-rows-1  grid-flow-col gap-4 mr-4 pt-0 pb-32 ">
+
+
+                                <div style="    min-width: 44vw;
+                                max-height: 42rem;">
+                                    <img src="Rectangle 46 full.png" class="  w-full h-4/6   rounded-lg" />
+                                </div>
+                                <div>
+                                    <div class="relative flex grow flex-col mt-11 max-md:max-w-full max-md:mt-10">
+                                        <div class="text-stone-700 text-3xl font-bold    whitespace-nowrap ml-4">
+                                            Hochwertige Malerarbeiten
+                                        </div>
+                                        <div class=" ml-8 mt-6">
+                                            <ul class="list-disc">
+                                                <li>Schmuck- &amp; Designtechniken</li>
+                                                <li>Lakierarbeiten</li>
+                                                <li>Tapezierarbeiten</li>
+                                                <li>Spachtelarbeiten</li>
+                                                <li>Fassadenanstriche</li>
+                                                <li>
+                                                    Wärmedämmverbundsysteme &amp; Industriebeschichtungen
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-t border-gray-700 mt-32 mb-8"></div>
+                                        <img loading="lazy"
+                                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ece12ced-f5d8-461e-8e6b-cfcc95b507f5?"
+                                            class="w-[2rem] object-contain object-center  stroke-stone-700" />
                                     </div>
-                                    <div
-                                        class="text-stone-700 text-base leading-7 tracking-wide self-stretch mt-9 max-md:max-w-full">
-                                        <ul>
-                                            <li>Schmuck- &amp; Designtechniken</li>
-                                            <li>Lakierarbeiten</li>
-                                            <li>Tapezierarbeiten</li>
-                                            <li>Spachtelarbeiten</li>
-                                            <li>Fassadenanstriche</li>
-                                            <li>
-                                                Wärmedämmverbundsysteme &amp; Industriebeschichtungen
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <img loading="lazy"
-                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/33d8bf54-c15f-4d30-96f2-03b3aedca8bd?"
-                                        class="aspect-[293] object-contain object-center w-full stroke-[2px] stroke-stone-300 overflow-hidden self-stretch mt-20 max-md:max-w-full max-md:mt-10" />
-                                    <img loading="lazy"
-                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ece12ced-f5d8-461e-8e6b-cfcc95b507f5?"
-                                        class="aspect-[8.3] object-contain object-center w-[166px] stroke-[2px] stroke-stone-700 overflow-hidden max-w-full mt-5" />
+
                                 </div>
                             </div>
+                        </div>
+                        <div class="slider-show-images hidden">
+                            <div class="p-20 grid grid-rows-1  grid-flow-col gap-4 mr-4 pt-0 pb-32  ">
+
+
+                                <div style="    min-width: 44vw;
+                                max-height: 42rem;">
+                                    <img src="2.png" class="  w-full h-4/6  rounded-lg" />
+                                </div>
+                                <div>
+                                    <div class="relative flex grow flex-col mt-11 max-md:max-w-full max-md:mt-10">
+                                        <div class="text-stone-700 text-3xl font-bold    whitespace-nowrap ml-4">
+                                            Hochwertige Malerarbeiten
+                                        </div>
+                                        <div class=" ml-8 mt-6">
+                                            <ul class="list-disc">
+                                                <li>Schmuck- &amp; Designtechniken</li>
+                                                <li>Lakierarbeiten</li>
+                                                <li>Tapezierarbeiten</li>
+                                                <li>Spachtelarbeiten</li>
+                                                <li>Fassadenanstriche</li>
+                                                <li>
+                                                    Wärmedämmverbundsysteme &amp; Industriebeschichtungen
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-t border-gray-700 mt-32 mb-8"></div>
+                                        <img loading="lazy"
+                                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ece12ced-f5d8-461e-8e6b-cfcc95b507f5?"
+                                            class="w-[2rem] object-contain object-center  stroke-stone-700" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-show-images hidden">
+                            <div class="p-20 grid grid-rows-1  grid-flow-col gap-4 mr-4 pt-0 pb-32 ">
+
+
+                                <div style="    min-width:44vw;
+                                max-height: 42rem;">
+                                    <img src="Rectangle 70.png" class="  w-full h-4/6  rounded-lg" />
+                                </div>
+                                <div>
+                                    <div class="relative flex grow flex-col mt-11 max-md:max-w-full max-md:mt-10">
+                                        <div class="text-stone-700 text-3xl font-bold    whitespace-nowrap ml-4">
+                                            Hochwertige Malerarbeiten
+                                        </div>
+                                        <div class=" ml-8 mt-6">
+                                            <ul class="list-disc">
+                                                <li>Schmuck- &amp; Designtechniken</li>
+                                                <li>Lakierarbeiten</li>
+                                                <li>Tapezierarbeiten</li>
+                                                <li>Spachtelarbeiten</li>
+                                                <li>Fassadenanstriche</li>
+                                                <li>
+                                                    Wärmedämmverbundsysteme &amp; Industriebeschichtungen
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-t border-gray-700 mt-32 mb-8"></div>
+                                        <img loading="lazy"
+                                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ece12ced-f5d8-461e-8e6b-cfcc95b507f5?"
+                                            class="w-[2rem] object-contain object-center  stroke-stone-700" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-show-images hidden">
+                            <div class="p-20 grid grid-rows-1  grid-flow-col gap-4 mr-4 pt-0 pb-32 ">
+
+
+                                <div style="    min-width: 44vw;
+                                max-height: 42rem;">
+                                    <img src="Rectangle 22.png" class="  w-full h-4/6  rounded-lg" />
+                                </div>
+                                <div>
+                                    <div class="relative flex grow flex-col mt-11 max-md:max-w-full max-md:mt-10">
+                                        <div class="text-stone-700 text-3xl font-bold    whitespace-nowrap ml-4">
+                                            Hochwertige Malerarbeiten
+                                        </div>
+                                        <div class=" ml-8 mt-6">
+                                            <ul class="list-disc">
+                                                <li>Schmuck- &amp; Designtechniken</li>
+                                                <li>Lakierarbeiten</li>
+                                                <li>Tapezierarbeiten</li>
+                                                <li>Spachtelarbeiten</li>
+                                                <li>Fassadenanstriche</li>
+                                                <li>
+                                                    Wärmedämmverbundsysteme &amp; Industriebeschichtungen
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-t border-gray-700 mt-32 mb-8"></div>
+                                        <img loading="lazy"
+                                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ece12ced-f5d8-461e-8e6b-cfcc95b507f5?"
+                                            class="w-[2rem] object-contain object-center  stroke-stone-700" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-show-images hidden">
+                            <div class="p-20 grid grid-rows-1  grid-flow-col gap-4 mr-4 pt-0 pb-32 ">
+
+
+                                <div style="    min-width: 44vw;
+                                max-height: 42rem;">
+                                    <img src="pexels-trygve-finkelsen-3029037.png"
+                                        class="  w-full h-4/6  rounded-lg" />
+                                </div>
+                                <div>
+                                    <div class="relative flex grow flex-col mt-11 max-md:max-w-full max-md:mt-10">
+                                        <div class="text-stone-700 text-3xl font-bold    whitespace-nowrap ml-4">
+                                            Hochwertige Malerarbeiten
+                                        </div>
+                                        <div class=" ml-8 mt-6">
+                                            <ul class="list-disc">
+                                                <li>Schmuck- &amp; Designtechniken</li>
+                                                <li>Lakierarbeiten</li>
+                                                <li>Tapezierarbeiten</li>
+                                                <li>Spachtelarbeiten</li>
+                                                <li>Fassadenanstriche</li>
+                                                <li>
+                                                    Wärmedämmverbundsysteme &amp; Industriebeschichtungen
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-t border-gray-700 mt-32 mb-8"></div>
+                                        <img loading="lazy"
+                                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ece12ced-f5d8-461e-8e6b-cfcc95b507f5?"
+                                            class="w-[2rem] object-contain object-center  stroke-stone-700" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>  
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="relative w-full h-screen">
+            <div class="relative w-full h-[40rem]">
 
                 <!-- Background Image with inline style -->
-                <div class="bg-cover bg-center rounded-lg h-full" style="background-image: url('5.png'); width: 100%;">
+                <div class="bg-cover bg-center  h-full" style="background-image: url('5.png'); width: 100%;">
                 </div>
 
                 <!-- Title -->
-                <h1 class="text-3xl font-bold text-white absolute top-4 left-4">Your Title</h1>
+                <h1 class="text-5xl font-bold text-white absolute top-36 left-1/3">Wofür wir stehen</h1>
 
                 <!-- Content in the middle -->
-                <div class="text-white text-center">
+                <div class="text-white text-center absolute top-[40%] left-[31%]">
                     <p class="text-lg">Your content goes here.</p>
                 </div>
 
             </div>
 
-            <div
-                class="relative text-stone-700 text-center text-5xl font-bold leading-[62.4px] tracking-widest capitalize whitespace-nowrap mr-64 mt-40 self-end max-md:text-4xl max-md:mr-2.5 max-md:mt-10">
-                Einige Projekte
+            <div class="flex flex-col w-full   p-40 pb-0">
+
+                <!-- Container with Title on the Right -->
+                <div class="relative justify-center items-end ">
+                    <h1 class="text-4xl font-bold  text-right mr-64" style="color: #3D4733;">Your Title</h1>
+
+                    <!-- Slider Container -->
+                    <div class="relative w-full p-16  h-screen">
+                        <!-- Slides -->
+                        <div
+                            class="flex flex-row transition-transform ease-in-out duration-300 transform h-full p-40 pt-0 pb-20">
+                            <!-- Slide 1 -->
+                            <div class="w-[30rem] h-[30rem] bg-cover bg-center rounded-lg relative">
+                                <img src="Rectangle 70.png" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <div class=" h-full p-4 ml-16 text-black text-2xl">
+                                Slide 1 Text
+                            </div>
+
+
+                            <!-- Slide 2 -->
+
+                            <!-- Add more slides as needed -->
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <div class="absolute top-1/3 left-0 flex items-center justify-center">
+                            <!-- Left Arrow -->
+                            <button class="text-white text-2xl focus:outline-none">
+                                <div class="w-10 h-10 bg-gray-500 rounded-full flex items-center justify-center">&#8592;
+                                </div>
+                            </button>
+                        </div>
+                        <div class="absolute top-1/3 right-0 flex items-center justify-center">
+                            <!-- Right Arrow -->
+                            <button class="text-white text-2xl focus:outline-none">
+                                <div class="w-10 h-10 bg-gray-500 rounded-full flex items-center justify-center">&#8594;
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <div
-                class="relative self-center z-[1] flex w-full max-w-[1301px] pl-0 flex-col items-stretch mt-14 pr-px max-md:max-w-full max-md:mt-10">
-                <div
-                    class="flex items-start justify-between gap-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
-                    <img loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/a193c5b7-0b37-405a-b6b5-b914bfdec137?"
-                        class="aspect-square object-contain object-center w-[57px] justify-center items-center overflow-hidden self-center shrink-0 max-w-full my-auto" />
-                    <img loading="lazy"
-                        class="aspect-[1.23] object-contain object-center w-full overflow-hidden self-stretch grow basis-[0%] max-md:max-w-full" />
-                    <div class="items-stretch flex grow basis-[0%] flex-col self-start">
-                        <div class="text-stone-700 text-4xl leading-[52px] tracking-widest capitalize">
-                            Projekt 2023
-                        </div>
-                        <div class="text-stone-700 text-base leading-7 tracking-wide mt-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet sit
-                            semper aenean vitae morbi fringilla posuere nibh malesuada.
-                        </div>
-                        <div class="text-stone-700 text-base font-bold leading-7 tracking-wide mt-5">
-                            <ul>
-                                <li>title 01</li>
-                                <li>title 02</li>
-                                <li>title 03</li>
-                                <li>title 04</li>
-                                <li>title 05</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <img loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/0aadda22-5f91-45c5-9724-9184bb6cd7e9?"
-                        class="aspect-square object-contain object-center w-[57px] justify-center items-center overflow-hidden self-center shrink-0 max-w-full my-auto" />
-                </div>
-                <div
-                    class="text-stone-700 text-5xl font-bold leading-[62.4px] tracking-widest whitespace-nowrap ml-48 mt-72 self-start max-md:text-4xl max-md:ml-2.5 max-md:mt-10">
-                    Wer wir sind
-                </div>
-                <div class="self-center w-full max-w-[1064px] mt-16 max-md:max-w-full max-md:mt-10">
-                    <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                        <div class="flex flex-col items-stretch w-[17%] max-md:w-full max-md:ml-0">
-                            <div
-                                class="bg-zinc-300 flex w-[180px] shrink-0 h-[180px] flex-col mx-auto rounded-3xl max-md:mt-6">
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-stretch w-[83%] ml-5 max-md:w-full max-md:ml-0">
-                            <div class="flex grow flex-col max-md:max-w-full max-md:mt-6">
-                                <div class="items-stretch flex w-[309px] max-w-full gap-1">
-                                    <div class="text-stone-500 text-2xl leading-7 tracking-wider capitalize">
-                                        Peter Paternoster-
-                                    </div>
-                                    <div
-                                        class="text-stone-400 text-base italic leading-5 tracking-wide whitespace-nowrap mt-2.5 self-start">
-                                        Malermeister
-                                    </div>
-                                </div>
-                                <div
-                                    class="text-neutral-700 text-4xl leading-[70px] tracking-wider self-stretch max-md:max-w-full">
-                                    <span class="">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aliquet sit semper aenean vitae morbi fringilla posuere nibh
-                                        malesuada.
-                                        <br />
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Aliquet sit semper aenean vitae morbi fringilla posuere nibh
-                                        malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Aliquet sit semper aenean vitae morbi fringilla posuere
-                                        nibh malesuada.
-                                        <br />
-                                        <br />
-                                    </span>
-                                    <span class="">Peter Paternoster</span>
-                                </div>
-                                <img loading="lazy"
-                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c002be2-edaa-4de3-b537-f2c745dc95c7?"
-                                    class="aspect-square object-contain object-center w-[120px] overflow-hidden max-w-full mt-10 self-end" />
-                            </div>
-                        </div>
-                    </div>
+            <div class="relative w-full mb-16">
+                <div class="text-5xl text-black ml-96">Wer wir sind</div>
+                <div class="mt-16 ml-96 flex">
+                    <img src="Rectangle 46.png" alt="" class="w-[15rem] h-[15rem] rounded-lg ml-6">
+                    <div class="flex flex-col text-2xl  ml-4">Peter Paternoster</div>
                 </div>
             </div>
         </div>
@@ -367,7 +531,13 @@
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+    "></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
 </body>
 
 </html>
