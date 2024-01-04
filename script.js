@@ -67,35 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('.arrow-left').addEventListener('click', prevSlide);
   document.querySelector('.arrow-right').addEventListener('click', nextSlide);
 
-  const targetElement = document.getElementById('splide-list');
 
-// Create a MutationObserver instance
-const observer = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-        // Check if the style attribute is mutated
-        if (mutation.attributeName === 'style') {
-            const currentTransformValue = targetElement.style.transform;
-
-            // Check if the current transform value contains translateY
-            if (currentTransformValue.includes('translateY')) {
-                // Extract the translateY value
-                const translateYValue = currentTransformValue.match(/translateY\(([-\d.]+)px\)/);
-                
-                if (translateYValue) {
-                    // Flip the translateY value and apply it back to the element
-                    const flippedValue = -parseFloat(translateYValue[1]);
-                    targetElement.style.transform = `translateY(${flippedValue}px)`;
-                }
-            }
-        }
-    });
-});
-
-// Configure the observer to watch for attribute changes
-const config = { attributes: true };
-
-// Start observing the target element
-observer.observe(targetElement, config);
 });
 
 
