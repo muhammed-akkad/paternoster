@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+@import "tailwindcss/variants";
 .carousel {
   display: flex;
   flex-direction: column; 
@@ -13,9 +13,11 @@
 }
 
 .cover-image {
-  background-image: url('Frame.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+  @media screen(md) {
+    background-image: url('Frame.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .text-content {
@@ -117,4 +119,22 @@ font-style: normal;
 font-weight: 400;
 line-height: 175%;
 letter-spacing: 0.8px;
+}
+
+.line {
+  height: 2px; /* Adjust the thickness of the line */
+  width: 1000%; /* Adjust the length of the line */
+  margin: 2px 16px; /* Adjust the spacing between lines */
+  background-color: #FF0000; /* Change the color of the line */
+}
+
+/* Apply different colors to each line */
+.line:nth-child(2) {
+  margin-left: 12px;
+  background-color: #FFE600;
+}
+
+.line:nth-child(3) {
+  margin-left: 8px;
+  background-color: #0066FF;
 }
