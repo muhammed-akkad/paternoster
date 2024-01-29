@@ -2,22 +2,18 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "tailwindcss/variants";
-.carousel {
-  display: flex;
-  flex-direction: column; 
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide-up {
-  margin-bottom: 1rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 .cover-image {
   @media screen(md) {
-    background-image: url('Frame.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url('../images/Frame.png');
+    background-size: cover;
+
   }
+}
+
+.item {
+  min-height: 25em;
 }
 
 .text-content {
@@ -32,7 +28,6 @@
 .text-header {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 font-family: Playfair Display;
-font-size: 48px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -44,7 +39,6 @@ line-height: normal;
 
 font-variant-numeric: lining-nums proportional-nums;
 font-family: Playfair Display;
-font-size: 48px;
 font-style: normal;
 font-weight: 700;
 line-height: 130%; /* 62.4px */
