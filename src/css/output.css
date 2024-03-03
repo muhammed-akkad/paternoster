@@ -1095,6 +1095,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
@@ -1129,6 +1139,10 @@ video {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.pl-2{
+  padding-left: 0.5rem;
 }
 
 .text-left{
@@ -1343,10 +1357,6 @@ video {
     margin-left: 1.25rem;
   }
 
-  .md\:ml-64{
-    margin-left: 16rem;
-  }
-
   .md\:mt-12{
     margin-top: 3rem;
   }
@@ -1391,8 +1401,8 @@ video {
     width: 75%;
   }
 
-  .md\:w-3\/6{
-    width: 50%;
+  .md\:w-4\/6{
+    width: 66.666667%;
   }
 
   .md\:w-44{
@@ -1405,6 +1415,14 @@ video {
 
   .md\:w-\[68\%\]{
     width: 68%;
+  }
+
+  .md\:w-1{
+    width: 0.25rem;
+  }
+
+  .md\:w-1\/6{
+    width: 16.666667%;
   }
 
   .md\:max-w-\[60\%\]{
@@ -1477,6 +1495,10 @@ video {
     padding-left: 0px;
   }
 
+  .md\:pl-40{
+    padding-left: 10rem;
+  }
+
   .md\:pl-8{
     padding-left: 2rem;
   }
@@ -1533,6 +1555,10 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:min-h-\[45rem\]{
+    min-height: 45rem;
   }
 
   .lg\:w-\[95\%\]{
@@ -1642,6 +1668,22 @@ video {
     background-image: url('../images/Frame.png');
 
     background-size: cover;
+  }
+}
+
+.splide__track {
+  height: 30em !important;
+}
+
+@media (max-width: 768px) {
+  .splide__track {
+    height: 25em !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .splide__track {
+    height: 20em !important;
   }
 }
 
