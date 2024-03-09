@@ -1116,10 +1116,6 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.pl-6{
-  padding-left: 1.5rem;
-}
-
 .pt-12{
   padding-top: 3rem;
 }
@@ -1152,11 +1148,6 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-5xl{
@@ -1334,6 +1325,20 @@ video {
   .sm\:p-0{
     padding: 0px;
   }
+
+  .sm\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .sm\:pb-10{
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -1498,6 +1503,10 @@ video {
     padding-left: 2rem;
   }
 
+  .md\:pr-0{
+    padding-right: 0px;
+  }
+
   .md\:pr-12{
     padding-right: 3rem;
   }
@@ -1547,8 +1556,8 @@ video {
     min-height: 45rem;
   }
 
-  .lg\:w-\[95\%\]{
-    width: 95%;
+  .lg\:w-\[100\%\]{
+    width: 100%;
   }
 
   .lg\:gap-28{
@@ -1557,6 +1566,10 @@ video {
 
   .lg\:gap-5{
     gap: 1.25rem;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
   }
 
   .lg\:p-16{
@@ -1802,4 +1815,10 @@ video {
   font-family: 'Playfair';
 
   src: url('PlayfairDisplay-Bold.ttf')   format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+
+  src: url('Roboto-Regular.ttf')   format('truetype')
 }
