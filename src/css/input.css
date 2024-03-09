@@ -28,9 +28,6 @@
     height: 20em !important;
   }
 }
-.item {
-  min-height: 25em;
-}
 
 .text-content {
   font-family: Open Sans;

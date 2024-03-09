@@ -105,17 +105,31 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".arrow-right").addEventListener("click", nextSlide);
 
   const itemTexts = {
-    1: "Hochwertige Malerarbeiten Text...",
-    2: "Kompetente Gestaltung & Beratung Text...",
-    3: "Qualitative Bodenbelagsarbeiten Text...",
-    4: "Liebevolle Restaurierungen Text...",
+    1:
+      "* Schmuck- & Designtechniken\n* Lakierarbeiten (Türen, Fenster, Tische, Geländer)\n* Tapezierarbeiten\n* Spachtelarbeiten \n" +
+      "* Fassadenanstriche \n" +
+      "* Wärmedämmverbundsysteme &\n Industriebeschichtungen (Innen- & Aussen)",
+    2: "* Farbberatung\n* Gardinen- & Stoffdekorationen\n* Innenraumberatung",
+    3: "* Teppich\n* Vinyl\n* Parkett",
+    4: "* Stuck- & Wandrestaurierungen\n* Kirchenmalerei\n* Denkmalrestaurierungen\n* Renovierungen",
     5: "Energieberatung Text...",
+  };
+
+  const itemHeaders = {
+    1: "Hochwertige Malerarbeiten",
+    2: "Kompetente Gestaltung & Beratung",
+    3: "Qualitative Bodenbelagsarbeiten",
+    4: "Liebevolle Restaurierungen",
+    5: "Energieberatung",
   };
 
   // Function to open the popup with the correct content
   function openPopup(itemNumber) {
     const popup = document.getElementById("popup");
+    const popupHeader = document.getElementById("popup-header");
+    popupHeader.textContent = itemHeaders[itemNumber];
     const popupContent = document.getElementById("popup-content");
+    popupContent.setAttribute("style", "white-space: pre;");
     popupContent.textContent = itemTexts[itemNumber];
     popup.classList.remove("hidden");
   }
