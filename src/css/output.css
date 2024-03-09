@@ -634,6 +634,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -1150,6 +1154,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
@@ -1336,12 +1345,20 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:ml-12{
+    margin-left: 3rem;
+  }
+
   .md\:ml-4{
     margin-left: 1rem;
   }
 
   .md\:ml-5{
     margin-left: 1.25rem;
+  }
+
+  .md\:mr-\[-4rem\]{
+    margin-right: -4rem;
   }
 
   .md\:mt-12{
@@ -1358,26 +1375,6 @@ video {
 
   .md\:mt-\[-10\%\]{
     margin-top: -10%;
-  }
-
-  .md\:ml-\[\]{
-    margin-left: ;
-  }
-
-  .md\:ml-\[-\]{
-    margin-left: -;
-  }
-
-  .md\:ml-\[-4rem\]{
-    margin-left: -4rem;
-  }
-
-  .md\:mr-\[-4rem\]{
-    margin-right: -4rem;
-  }
-
-  .md\:ml-12{
-    margin-left: 3rem;
   }
 
   .md\:flex{
@@ -1485,13 +1482,12 @@ video {
     padding-right: 0px;
   }
 
-  .md\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .md\:pl-0{
     padding-left: 0px;
+  }
+
+  .md\:pl-20{
+    padding-left: 5rem;
   }
 
   .md\:pl-40{
@@ -1508,15 +1504,6 @@ video {
 
   .md\:pt-8{
     padding-top: 2rem;
-  }
-
-  .md\:pl-20{
-    padding-left: 5rem;
-  }
-
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-5xl{
@@ -1809,4 +1796,10 @@ video {
 .line:nth-child(3) {
   margin-left: 8px;
   background-color: #0066FF;
+}
+
+@font-face {
+  font-family: 'Playfair';
+
+  src: url('PlayfairDisplay-Bold.ttf')   format('truetype')
 }
