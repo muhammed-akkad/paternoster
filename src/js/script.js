@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     arrows: false,
     height: "30em",
     width: "12em",
+    drag: false,
   }).mount();
 
   // Initialize the second Splide slider (also moving upwards, but we'll reverse the transform)
@@ -39,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     arrows: false,
     height: "30em",
     width: "12em",
+    drag: false,
   }).mount();
 
   // Function to update the slider's position

@@ -9,6 +9,7 @@
   @media screen(md) {
     background-image: url('../images/Frame.png');
     background-size: cover;
+    height: 100%;
 
   }
 }
@@ -152,11 +153,17 @@ letter-spacing: 0.8px;
 @font-face {
   font-family: 'Playfair';
 
-  src: url('PlayfairDisplay-Bold.ttf')   format('truetype')    
+  src: url('../fonts/PlayfairDisplay-Bold.ttf')   format('truetype')    
 }
 
 @font-face {
   font-family: 'Roboto-Regular';
 
-  src: url('Roboto-Regular.ttf')   format('truetype')    
+  src: url('../fonts/Roboto-Regular.ttf')   format('truetype')    
+}
+
+@font-face {
+  font-family: 'Playfair Display-Regular';
+
+  src: url('../fonts/PlayfairDisplay-Regular.ttf')   format('truetype')    
 }
