@@ -671,8 +671,16 @@ video {
   margin-right: 1rem;
 }
 
+.mr-40{
+  margin-right: 10rem;
+}
+
 .mt-0{
   margin-top: 0px;
+}
+
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-16{
@@ -801,6 +809,10 @@ video {
 
 .w-2\/4{
   width: 50%;
+}
+
+.w-3\/4{
+  width: 75%;
 }
 
 .w-5{
@@ -985,11 +997,6 @@ video {
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-stone-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
 }
 
 .bg-stone-500{
@@ -1548,8 +1555,8 @@ video {
     width: 100%;
   }
 
-  .lg\:gap-28{
-    gap: 7rem;
+  .lg\:gap-20{
+    gap: 5rem;
   }
 
   .lg\:gap-5{
@@ -1648,6 +1655,10 @@ video {
   .\32xl\:w-\[150rem\]{
     width: 150rem;
   }
+}
+
+html {
+  color:#3d4733;
 }
 
 .cover-image {
@@ -1810,7 +1821,19 @@ video {
 }
 
 @font-face {
+  font-family: 'Roboto-Bold';
+
+  src: url('../fonts/Roboto-Bold.ttf')   format('truetype')
+}
+
+@font-face {
   font-family: 'Playfair Display-Regular';
 
   src: url('../fonts/PlayfairDisplay-Regular.ttf')   format('truetype')
+}
+
+@font-face {
+  font-family: 'OpenSans Regular';
+
+  src: url('../fonts/OpenSans_Condensed-Regular.ttf')   format('truetype')
 }

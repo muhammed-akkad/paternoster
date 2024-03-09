@@ -106,13 +106,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const itemTexts = {
     1:
-      "* Schmuck- & Designtechniken\n* Lakierarbeiten (Türen, Fenster, Tische, Geländer)\n* Tapezierarbeiten\n* Spachtelarbeiten \n" +
-      "* Fassadenanstriche \n" +
-      "* Wärmedämmverbundsysteme &\n Industriebeschichtungen (Innen- & Aussen)",
-    2: "* Farbberatung\n* Gardinen- & Stoffdekorationen\n* Innenraumberatung",
-    3: "* Teppich\n* Vinyl\n* Parkett",
-    4: "* Stuck- & Wandrestaurierungen\n* Kirchenmalerei\n* Denkmalrestaurierungen\n* Renovierungen",
-    5: "Energieberatung Text...",
+      "• Schmuck- & Designtechniken\n• Lakierarbeiten (Türen, Fenster, Tische, Geländer)\n• Tapezierarbeiten\n• Spachtelarbeiten \n" +
+      "• Fassadenanstriche \n" +
+      "• Wärmedämmverbundsysteme &\n Industriebeschichtungen (Innen- & Aussen)",
+    2: "• Farbberatung\n• Gardinen- & Stoffdekorationen\n• Innenraumberatung",
+    3: "• Teppich\n• Vinyl\n• Parkett",
+    4: "• Stuck- & Wandrestaurierungen\n• Kirchenmalerei\n• Denkmalrestaurierungen\n• Renovierungen",
+    6: "Energieberatung Text...",
+    5: "• Decken- und Wandkonstruktionen\n mit Licht und Konsolen\n • Trennwände\n• Trockenböden\n• Vorsatzschalen",
   };
 
   const itemHeaders = {
@@ -120,7 +121,8 @@ document.addEventListener("DOMContentLoaded", function () {
     2: "Kompetente Gestaltung & Beratung",
     3: "Qualitative Bodenbelagsarbeiten",
     4: "Liebevolle Restaurierungen",
-    5: "Energieberatung",
+    6: "Energieberatung",
+    5: "Trockenbau",
   };
 
   // Function to open the popup with the correct content
